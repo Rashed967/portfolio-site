@@ -50,8 +50,6 @@ const Banner = () => {
                             width: '5px',
                             height: '120%',
                             background: '#012A4A',
-                            // transform : 'rotate(90deg)',
-                            // transformOrigin : 'top left',
                             position: 'absolute',
                             left: '-20px',
                             top: '-10px',
