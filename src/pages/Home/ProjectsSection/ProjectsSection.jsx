@@ -18,7 +18,7 @@ const ProjectsSection = () => {
 
 
     return (
-        <Grid container sx={{ background: '#A9D6E5', overflow: 'hidden' }}>
+        <Grid container sx={{ background: '#A9D6E5', overflow: 'hidden' , pb : '60px'}}>
         <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
           <Typography variant="h4" fontWeight="500" color="#012A4A" my="15px">
             Projects Gallery
