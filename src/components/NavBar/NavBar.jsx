@@ -7,12 +7,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom';
+
+
 
 const pages = ['Home', 'Resume', 'About', 'Projects', 'Contact me'];
 
@@ -31,10 +30,10 @@ const NavBar = () => {
 
 
   return (
-    <AppBar position="static" sx={{backgroundColor : "#012A4A"}}>
+    <AppBar position="static" sx={{ backgroundColor: "#012A4A" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters >
-          
+
           <Typography
             variant="h6"
             noWrap
@@ -84,12 +83,17 @@ const NavBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                 <Link to="#" style={{textDecoration : "none"}}>
+                 <Typography color="#014F86" textAlign="center">
+                  {page}
+                  </Typography></Link>
+                  
+                  
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          
+
           {/* <Box sx={{
             width : 50,
             height : 50,
@@ -102,8 +106,8 @@ const NavBar = () => {
           }}>
           <img  src={logo} alt="" />
           </Box> */}
-       
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: { xs: 'column', md: 'row' },} }}>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: { xs: 'column', md: 'row' }, } }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -115,7 +119,7 @@ const NavBar = () => {
             ))}
           </Box>
 
-        
+
         </Toolbar>
       </Container>
     </AppBar>
