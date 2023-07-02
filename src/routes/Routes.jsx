@@ -6,6 +6,7 @@ import Home from '../pages/Home/Home/Home';
 import About from '../pages/About/About';
 import Contact from '../pages/contact/contact';
 import AllProject from '../pages/AllProject/AllProject';
+import SingleProject from '../pages/SingleProject/SingleProject';
 
 const Routes = createBrowserRouter([
     {
@@ -27,6 +28,12 @@ const Routes = createBrowserRouter([
         {
           path : "/AllProject",
           element : <AllProject></AllProject>
+        },
+        {
+          path : "/singleProject/:id",
+          element : <SingleProject></SingleProject>,
+          // loader : async ({params}) => fetch(`http://localhost:3000/projects/${params.id}`)
+          
         }
       ]
     },

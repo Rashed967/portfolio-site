@@ -1,5 +1,6 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const AllProject = () => {
@@ -66,13 +67,20 @@ const AllProject = () => {
                                 border : '3px solid #012A4A',
                                 '&:hover' : {
                                     background : 'white',
+                                    
                                     border : '3px solid #012A4A',
-                                    color : '#012A4A',
                                     fontWeight : '600'
                                 }
                                 
                             }}>
-                                <Typography variant="body1" fontWeight={300}>See full details</Typography>
+                                <Link to={`/singleProject/${pr._id}`} style={{textDecoration : 'none'}}>
+                                <Typography color="white" variant="body1" fontWeight={300}
+                                sx={{
+                                    '&:hover' : {
+                                        color : '#012A4A' 
+                                    }
+                                }}
+                                >See full details</Typography></Link>
                             </Button>
                           </Box>
                           </Box>
