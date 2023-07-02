@@ -76,7 +76,7 @@ const MySkills = () => {
                                 <Box sx={{
                                     
                                     height: "100px",
-                                    width : '95%'
+                                    width : '85%'
                                 }}>
                                     <Box>
                                         <Typography variant='h6' color="white" mb="5px" ml="5px">{skill.name}</Typography>
@@ -110,7 +110,9 @@ const MySkills = () => {
                                     </Box>
                                 
                                 </Box>
-                            </Grid>)
+                            </Grid>
+                            
+                            )
                         }
                        
                         
