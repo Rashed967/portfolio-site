@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 
+
 const SingleProject = () => {
     const {id} = useParams()
 
@@ -36,8 +37,8 @@ const SingleProject = () => {
                     <Typography variant='subtitle1' color="white">Project Features:</Typography>
                     <List disablePadding="true" dense="true">
                         {
-                            project.features?.map(feature => <ListItem sx={{p : "0px"}} key={feature}>
-                               <ListItemIcon ><FiberManualRecord sx={{color : 'white', width : "12px", pr : "5px"}}></FiberManualRecord></ListItemIcon>
+                            project.features?.map(feature => <ListItem  key={feature}>
+                               
                                 <ListItemText sx={{py : -1}}>
                                 
                                     <Typography variant='body2' color="white" fontWeight={300}>{feature}</Typography></ListItemText>
@@ -48,16 +49,18 @@ const SingleProject = () => {
 
                 <Box  sx={{mt : "15px"}}>
                     <Typography variant='subtitle1' color="white">Project duration:</Typography>
-                    <Typography color="white" variant='body2' fontWeight={300}>{project.duration}</Typography>
+                    <Typography color="yellow" variant='body2' fontWeight={300}>{project.duration}</Typography>
                 </Box>
                 
                 <Box  sx={{mt : "15px"}}>
                     <Typography variant='subtitle1' color="white">Used technologies:</Typography>
                     <List>
                         {
-                            project.technologis?.map(technology => <ListItem sx={{m : "0px", p : "0px"}} key={technology}>
+                            project.technologis?.map(technology => <ListItem  key={technology}>
                                 
-                                <ListItemText><Typography variant='body2' color="white" fontWeight={300}>{technology}</Typography></ListItemText>
+                                <ListItemText sx={{py : -1}}>
+                                  
+                                    <Typography sx={{}} variant='body2' color="white" fontWeight={300}>{technology}</Typography></ListItemText>
                             </ListItem>)
                         }
                     </List>
