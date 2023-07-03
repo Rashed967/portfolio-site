@@ -1,5 +1,6 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AboteSectoin = () => {
     return (
@@ -76,7 +77,24 @@ const AboteSectoin = () => {
                 display : 'flex',
                 justifyContent : 'center'
             }}>
-            <Button sx={{ mt: 2, background: 'white', color: '#012A4A', py: 1, px: 2 }} variant="contained"><Typography variant='button' fontWeight={400}>More about me</Typography></Button>
+            <Button variant="contained"
+                    component = {Link}
+                    to="/about"
+                    sx={{
+                    background : "white",
+                    color : "#012A4A",
+                    fontWeight : '600',
+                    border : '3px solid white',
+                    '&:hover' : {
+                        background : '#012A4A',
+                        border : '3px solid white',
+                        color : 'white',
+                        fontWeight : '600'
+                    }
+                    // #012A4A
+                }}>
+                    <Typography variant="body1" fontWeight={300}>More About me</Typography>
+                </Button>
             </Box>
         </Grid>
 

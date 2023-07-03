@@ -13,7 +13,36 @@ import { Link } from 'react-router-dom';
 
 
 
-const pages = ['Home', 'Resume', 'About', 'Projects', 'Contact me'];
+const navLinks = [
+  { 
+    "name" : "Home",
+    "path" : "/",
+    "id" : 1
+  },
+  {
+    "name" : "Resume",
+    "path" : "/resume",
+    "id" : 2
+  },
+  {
+    "name" : "About",
+    "path" : "/about",
+    "id" : 3
+  },
+  {
+    "name" : "Projects",
+    "path" : "/AllProject",
+    "id" : 4
+  },
+  {
+    "name" : "Contact",
+    "path" : "/contact",
+    "id" : 5
+  }
+  
+];
+
+// const pages = ["Home", "Resume", "About", "Projects", "contact"]
 
 
 const NavBar = () => {
@@ -81,11 +110,11 @@ const NavBar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                 <Link to="#" style={{textDecoration : "none"}}>
+              {navLinks.map((navLink) => (
+                <MenuItem key={navLink.id} onClick={handleCloseNavMenu}>
+                 <Link to={navLink.path} style={{textDecoration : "none"}}>
                  <Typography color="#014F86" textAlign="center">
-                  {page}
+                  {navLink.name}
                   </Typography></Link>
                   
                   
@@ -94,27 +123,16 @@ const NavBar = () => {
             </Menu>
           </Box>
 
-          {/* <Box sx={{
-            width : 50,
-            height : 50,
-            '& img' : {
-              width : '50%',
-              height : '50%',
-              objectFit : 'cover'
-              
-            }
-          }}>
-          <img  src={logo} alt="" />
-          </Box> */}
-
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: { xs: 'column', md: 'row' }, } }}>
-            {pages.map((page) => (
+            {navLinks.map((navLink) => (
               <Button
-                key={page}
+                key={navLink.id}
                 onClick={handleCloseNavMenu}
+                component={Link}
+                to={navLink.path}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                {navLink.name}
               </Button>
             ))}
           </Box>

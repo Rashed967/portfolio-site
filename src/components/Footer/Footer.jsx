@@ -19,10 +19,10 @@ const Footer = () => {
                                         <Link to="/contact"><ListItemText sx={{ color: 'white' }} primary="Contact me" /></Link>
                                     </ListItem>
                                     <ListItem sx={{ color: 'white' }}>
-                                        <Link to="/projects"><ListItemText sx={{ color: 'white' }} primary="Projects" /></Link>
+                                        <Link to="/AllProject"><ListItemText sx={{ color: 'white' }} primary="Projects" /></Link>
                                     </ListItem>
                                     <ListItem sx={{ color: 'white' }}>
-                                        <Link to="/resume"><ListItemText sx={{ color: 'white' }} primary="Resume" /></Link>
+                                        <Link to="#"><ListItemText sx={{ color: 'white' }} primary="Resume" /></Link>
                                     </ListItem>
                                 </List>
                             </Box>
@@ -61,7 +61,7 @@ const Footer = () => {
                                         <Link to="https://art-and-craft-823bc.web.app/"><ListItemText sx={{ color: 'white' }} primary="Art and craft
 " /></Link>
                                     </ListItem>
-                                    
+
                                 </List>
                             </Box>
                         </Grid>

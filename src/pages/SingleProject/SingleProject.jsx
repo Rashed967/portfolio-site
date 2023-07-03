@@ -18,11 +18,11 @@ const SingleProject = () => {
 
     },[id])
 
-    console.log(project)
+
     return (
         <div>
              <Box sx={{ width: '100%', background : "#A9D6E5",}}>
-                <Typography variant='h4'fontWeight={600} py="30px" color="#012A4A" align="center">Projects Details</Typography>
+                <Typography variant='h4'fontWeight={600} py="30px" color="#012A4A" align="center">{project.name}  details</Typography>
             </Box>
             <Box sx={{widht : "100%"}}>
                 <img width="100%" src={project.image} alt="" />

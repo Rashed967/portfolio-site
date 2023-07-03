@@ -80,7 +80,21 @@ const Banner = () => {
 
                         <Typography variant='h2' component="h1" fontWeight={700} sx={{ color: '#012A4A' }}>ABDUR RAHMAN</Typography>
                         <Typography variant='body1' sx={{ color: '#012A4A' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti ipsam nulla? Deserunt, voluptates ratione.</Typography>
-                        <Button sx={{ mt: 2, background: '#012A4A', color: 'white', py: 1, px: 2 }} variant="contained"><Typography variant='button' fontWeight={400}>Download CV</Typography></Button>
+                        <Button variant="contained" sx={{
+                    background : "#012A4A",
+                    fontWeight : '600',
+                    border : '3px solid #012A4A',
+                    mt : "15px",
+                    '&:hover' : {
+                        background : 'white',
+                        border : '3px solid #012A4A',
+                        color : '#012A4A',
+                        fontWeight : '600'
+                    }
+                    
+                }}>
+                    <Typography variant="body1" fontWeight={300}>Donwdload CV</Typography>
+                </Button>
 
                     </Box>
 
