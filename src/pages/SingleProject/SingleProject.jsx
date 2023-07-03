@@ -1,7 +1,12 @@
 import { FiberManualRecord } from '@mui/icons-material';
-import { Box, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Button, Grid, IconButton, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import LaunchIcon from '@mui/icons-material/Launch';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import CodeIcon from '@mui/icons-material/Code';
+
 
 
 
@@ -29,6 +34,158 @@ const SingleProject = () => {
             </Box>
             <Box sx={{width : "100%", background :"#014F86", display : "flex", justifyContent : "center", alginItmes :"center", py : "40px"}}>
                 <Box sx={{  width : "90%"}}>
+                    <Box>
+                    <Box  m="25px" >
+
+        <Grid container spacing={2}>
+            <Grid item xs={10} sm={4}>
+            <Button
+variant="contained"
+sx={{
+background: "#012A4A",
+fontWeight: '600',
+border: '3px solid #012A4A',
+'&:hover': {
+background: 'white',
+border: '3px solid #012A4A',
+fontWeight: '600',
+'& .MuiIconButton-root': {
+color: '#012A4A'
+},
+'& .MuiTypography-root': {
+color: "#012A4A"
+}
+}
+}}
+>
+
+<Link to={project.liveSite} style={{ textDecoration: 'none' }}>
+<Typography
+color="white"
+variant="body1"
+fontWeight={300}
+sx={{ display: 'flex', alignItems: 'center' }}
+>
+<IconButton
+size="small"
+sx={{
+color: 'white',
+'&:hover': {
+background: "none"
+}
+}}
+>
+<LaunchIcon />
+</IconButton>
+Live site
+</Typography>
+</Link>
+</Button>
+            </Grid>
+
+            <Grid item xs={10} sm={4}>
+{/* 2nd button  */}
+<Button
+variant="contained"
+sx={{
+background: "#012A4A",
+fontWeight: '600',
+border: '3px solid #012A4A',
+'&:hover': {
+background: 'white',
+border: '3px solid #012A4A',
+fontWeight: '600',
+'& .MuiIconButton-root': {
+color: '#012A4A'
+},
+'& .MuiTypography-root': {
+color: "#012A4A"
+}
+}
+}}
+>
+<Link to={project.serverSide} style={{ textDecoration: 'none' }}>
+<Typography
+color="white"
+variant="body1"
+fontWeight={300}
+sx={{ display: 'flex', alignItems: 'center' }}
+>
+<IconButton
+size="small"
+sx={{
+color: 'white',
+'&:hover': {
+background: "none"
+}
+}}
+>
+<GitHubIcon />
+</IconButton>
+Client side
+</Typography>
+</Link>
+</Button>
+            </Grid>
+
+            <Grid item xs={10} sm={4}>
+{/* 3r button  */}
+<Button
+variant="contained"
+sx={{
+background: "#012A4A",
+fontWeight: '600',
+border: '3px solid #012A4A',
+'&:hover': {
+background: 'white',
+border: '3px solid #012A4A',
+fontWeight: '600',
+'& .MuiIconButton-root': {
+color: '#012A4A'
+},
+'& .MuiTypography-root': {
+color: "#012A4A"
+}
+}
+}}
+>
+<Link to={project.serverSide} style={{ textDecoration: 'none' }}>
+<Typography
+color="white"
+variant="body1"
+fontWeight={300}
+sx={{ display: 'flex', alignItems: 'center' }}
+>
+<IconButton
+size="small"
+sx={{
+color: 'white',
+'&:hover': {
+background: "none"
+}
+}}
+>
+<CodeIcon />
+</IconButton>
+Server side
+</Typography>
+</Link>
+</Button>
+
+            </Grid>
+        </Grid>
+
+
+
+
+
+
+
+
+</Box>
+
+{/* button end  */}
+                    </Box>
                     <Box >
                     <Typography variant='subtitle1' color="white">Project description:</Typography>
                     <Typography color="white" variant='body2' fontWeight={300}>{project.description}</Typography>

@@ -123,7 +123,7 @@ const ProjectsSection = () => {
       background: 'white',
       border: '3px solid #012A4A',
       fontWeight: '600',
-      '& .MuiIconButton-root:nth-of-type(2)': {
+      '& .MuiIconButton-root': {
         color: '#012A4A'
       },
       '& .MuiTypography-root': {
