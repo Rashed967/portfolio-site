@@ -79,7 +79,8 @@ const Banner = () => {
                         </Box>
 
                         <Typography variant='h2' component="h1" fontWeight={700} sx={{ color: '#012A4A' }}>ABDUR RAHMAN</Typography>
-                        <Typography variant='body1' sx={{ color: '#012A4A' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti ipsam nulla? Deserunt, voluptates ratione.</Typography>
+                        <Typography variant='body1' sx={{ color: '#012A4A' }}>I am a front-end developer with expertise in MongoDB, React, Firebase, and Node.js.
+</Typography>
                         <Button variant="contained" sx={{
                     background : "#012A4A",
                     fontWeight : '600',

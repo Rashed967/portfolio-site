@@ -114,8 +114,11 @@ const ProjectsSection = () => {
 
 {/* 2nd button  */}
 <Button
+    size="small"
+    
   variant="contained"
   sx={{
+    mr :"5px",
     background: "#012A4A",
     fontWeight: '600',
     border: '3px solid #012A4A',

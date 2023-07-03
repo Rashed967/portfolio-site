@@ -19,7 +19,19 @@ const About = () => {
             <Box sx={{width : "100%", background :"#A9D6E5", display : "flex", justifyContent : "center", alginItmes :"center", py : "40px"}}>
                 <Box sx={{  width : "90%"}}>
                     <Box >
-                    <Typography color="black" variant='body2' fontWeight={300}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut quos iste vero tempora officiis, eligendi temporibus autem laudantium blanditiis vel. Sint odio delectus deleniti minus beatae ullam veritatis, illum molestiae incidunt fugiat mollitia, facilis, consequuntur in quis aut suscipit nulla amet repudiandae dicta placeat alias quos! Eum saepe vitae unde omnis ipsam molestiae dolorem excepturi obcaecati sed distinctio exercitationem maxime eos doloremque est adipisci fuga officiis, reiciendis atque repellat! Iusto, cumque? Quisquam aut debitis beatae nihil, repellendus ad distinctio, quaerat quasi, dolor corrupti quas omnis. Laboriosam similique corporis distinctio ipsa omnis sed veniam perspiciatis ad deleniti, temporibus iste nihil minus quos eum explicabo molestias? Corporis explicabo nemo non, numquam repellat nisi temporibus nulla recusandae dolorum. Voluptatibus tempore soluta, velit, earum ea possimus iste cum doloremque quo explicabo rem? Vel ut a porro debitis vero cupiditate quisquam reiciendis, repellat id laudantium! Quidem ducimus iusto non, velit magni enim id delectus asperiores, eos consequatur sequi similique dolorem veniam dolores aperiam molestias magnam illum quia omnis provident. Corporis praesentium, et consectetur aperiam sapiente laudantium suscipit ipsa minima sed laborum. Maiores dolores reiciendis deleniti quae id, porro dicta totam fugiat nemo minima delectus, ex, facilis temporibus beatae nam? Nobis vero incidunt voluptatibus! Beatae.</Typography>
+                    <Typography fontSize="17px" color="black" variant='body2' fontWeight={400}>Welcome to my About page! I'm Abdur Rahman , I am a front-end developer with expertise in MongoDB, React, Firebase, and Node.js. With a strong passion for creating exceptional user experiences, I bring a dynamic skill set to web development.
+
+In MongoDB, I excel at designing efficient database schemas and performing seamless CRUD operations. I prioritize data integrity through meticulous validation, ensuring the reliability and security of applications.
+
+React is my go-to framework for front-end development, enabling me to build interactive and responsive user interfaces. With a deep understanding of state management and component-based architecture, I create reusable UI components that enhance maintainability and scalability.
+
+I am well-versed in Firebase, leveraging its authentication, cloud storage, and real-time database features to streamline user management and data handling. This integration allows me to create powerful and efficient applications.
+
+On the server side, I have experience with Node.js and the Express.js framework. I develop scalable server-side applications and RESTful APIs, ensuring seamless communication between the client and server.
+
+With excellent problem-solving skills and a collaborative mindset, I thrive in team environments. I am committed to delivering outstanding results and effectively collaborating with designers, developers, and stakeholders.
+
+I invite you to explore my portfolio to see examples of my work showcasing my proficiency in MongoDB, React, Firebase, and Node.js. If you have an exciting front-end development opportunity or a project that requires my expertise, I would love to hear from you. Let's collaborate to bring your ideas to life and create remarkable web applications.</Typography>
                     </Box>
                     <Box sx={{width : "100%" , display : "flex", justifyContent : "center", mt  : "30px"}}>
                     <Button variant="contained" sx={{
